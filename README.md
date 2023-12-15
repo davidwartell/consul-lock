@@ -26,3 +26,29 @@ make run
 make pull-consul
 make start-consul
 ```
+
+### Example output
+```shell
+$ go run .                                                                                                     ✔  INSERT
+0 acquired lock in 26.115708ms
+0: lockChan closed
+0: released lock in 12.319667ms
+0: stopCh closed
+1 acquired lock in 3.043962416s
+1: released lock in 4.455917ms
+1: stopCh closed
+1: lockChan closed
+3 acquired lock in 6.054300458s
+3: released lock in 12.602375ms
+3: stopCh closed
+3: lockChan closed
+4 acquired lock in 9.07517475s
+4: lockChan closed
+4: stopCh closed
+4: released lock in 3.808833ms
+2 acquired lock in 12.083049166s
+2: lockChan closed
+2: released lock in 4.186667ms
+exited
+2: stopCh closed
+```
